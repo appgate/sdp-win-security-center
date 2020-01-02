@@ -151,7 +151,7 @@ The cons are:
 
 ### wmicprovider
 You find it on it's dedicated repository:
-* [latest release](https://github.com/appgate/appgate-wmicprovider) 
+* [latest release](https://appgate.github.io/appgate-wmicprovider) 
 
 
 ### Upload the Device Script
