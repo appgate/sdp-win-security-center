@@ -43,7 +43,7 @@ The information regarding AV is retrieved from `Windows Security Center`, and we
 ## Methods
 There are two methods presented which are slightly different but produce the same result:
 1. Using the [avinspect.ps1](./avinspect.ps1) as the device script and the [avinspect.js](./avinspect.js) as the evaluation logic.
-2. Using the [WSCapi.exe](https://github.com/appgate/appgate-avcheck/blob/master/WSCApi.exe) as the device script, and the [av_wscapi.js](av_wscapi.js) as the evaluation logic.
+2. Using the [WSCapi.exe](https://github.com/appgate/appgate-avcheck/releases/latest) as the device script, and the [av_wscapi.js](av_wscapi.js) as the evaluation logic.
 3. Using the [wmicprovider.exe]() as the device script, and the [av_mic.js](./av_mic.js) as the evaluation logic.
 
 
@@ -109,7 +109,7 @@ The cons are:
 
 ### wscapi.exe
 You find it on it's dedicated repository:
-* [WSCApi.exe](https://github.com/appgate/appgate-avcheck/blob/master/WSCApi.exe) 
+* [WSCApi.exe](https://github.com/appgate/appgate-avcheck/releases/latest) 
 * SHA256: `2812f87004b6ff8d9a4c2513e3b44f578092a8404684a7b0baf1fc9025fe497d`
 
 
