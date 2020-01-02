@@ -21,8 +21,6 @@ SUCH CODE AND/OR SCRIPTS, REGARDLESS OF THE LEGAL THEORY UNDER WHICH SUCH LIABIL
 IS ASSERTED AND REGARDLESS OF WHETHER APPGATE HAS BEEN ADVISED OF THE POSSIBILITY
 OF SUCH LIABILITY.
 
-
-
 # Overview
 This material demonstrates the use case of device scripting. We encourage you are familiar with the [AppGate Extension](https://appgate.github.io/appgate-extensions/).
 
