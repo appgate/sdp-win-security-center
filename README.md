@@ -1,5 +1,5 @@
 # Overview
-This material demonstrates the use case of device scripting. We encourage you are familiar with the [Appgate Extension](https://appgate.github.io/appgate-extensions/).
+This material demonstrates the use case of device scripting. We encourage you are familiar with the [Appgate Extension](https://github.com/appgate/sdp-extensions/).
 >Note: the example shows a how-to for anti-virus, however you will be able to do the same for firewall and anti-spyware
 
 In this use case we enforce user security based on the status of the end user's antivirus product running on the client machine (OS.
