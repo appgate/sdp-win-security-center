@@ -1,4 +1,3 @@
-
 # Functions
 function ConvertTo-Json_legacy($objS) {
     $legacy = '['
@@ -43,12 +42,10 @@ function ag_write_result($msg){
 # End functions
 
 Set-StrictMode -Version Latest
-$Computer="localhost"
 $results =  @()
 $errors =  @()
     Try 
     {   
-        
 
         $psversion = [int]$PSversionTable.PSVersion.Major
         IF ( $psversion -ge 3 )  
@@ -60,18 +57,18 @@ $errors =  @()
             $is_modern_psv = $false
         }
 
-
-        [system.Version]$OSVersion = (Get-WmiObject win32_operatingsystem -computername $Computer).version 
+        [system.Version]$OSVersion = (Get-CimInstance win32_operatingsystem).version 
 
         IF ($OSVersion -ge [system.version]'6.0.0.0')  
         { 
             # Write-Verbose "OS Windows Vista/Server 2008 or newer detected." 
-            $AntiVirusProduct_r = Get-WmiObject -Namespace root\SecurityCenter2 -Class AntiVirusProduct -ComputerName $Computer -ErrorAction Stop 
+            # Get-CimInstance over Get-WmiObject to support Powershell Core.
+            $AntiVirusProduct_r = Get-CimInstance -Namespace root\SecurityCenter2 -Class AntiVirusProduct -ErrorAction Stop 
         }  
         Else  
         { 
             # Write-Verbose "Windows 2000, 2003, XP detected"  
-            $AntiVirusProduct_r = Get-WmiObject -Namespace root\SecurityCenter -Class AntiVirusProduct  -ComputerName $Computer -ErrorAction Stop 
+            $AntiVirusProduct_r = Get-CimInstance -Namespace root\SecurityCenter -Class AntiVirusProduct -ErrorAction Stop 
         } # end IF ($OSVersion -ge 6.0)  
 
         if ($AntiVirusProduct_r) { 
@@ -213,6 +210,5 @@ $errors =  @()
         $errors += $errorMessage
         ag_write_result $errors
     }                               
-
 
 
