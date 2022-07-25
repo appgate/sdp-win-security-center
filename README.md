@@ -51,7 +51,7 @@ _System > Identity Providers > `edit the appropriate identity provider> Map On-d
 
 ### Create a condition
 _operations > Condition > Add New_
-In the new condition in `Assignment` click on `Switch to Editor mode`. I these part we now consume the JSON from the device claim which will be stored in a claim called `claims.device.avinspect`. Copy to code from the avinspect.js in there.
+In the new condition in `Access Criteria` click on dropdown next to `Allowed when` select `script returns true`. I these part we now consume the JSON from the device claim which will be stored in a claim called `claims.device.avinspect`. Copy to code from the avinspect.js in there.
 
 Add a user notification (remedy:reason) for the case when the condition fails. For example: A user is denied access because Appgate could not detect your antivirus status, or it fails the condition. 
 Example for user notification: 
