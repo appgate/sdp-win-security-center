@@ -1,3 +1,8 @@
+# Deprecated
+
+This repository is deprecated. Please use the sample scripts from https://github.com/appgate/sdp-wscapi
+
+
 # Overview
 This material demonstrates the use case of device scripting. We encourage you are familiar with the [Appgate Extension](https://github.com/appgate/sdp-extensions/).
 >Note: the example shows a how-to for anti-virus, however you will be able to do the same for firewall and anti-spyware
